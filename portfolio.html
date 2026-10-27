@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title> Malena Rifai - Portfolio</title>
+    <link href="estilos.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="lightbox/jquery.fancybox.css">
+    <link rel="icon" type="image/x-icon" href="img/favicon-32x32.png">
+</head>
+
+<body>
+    <header class="botonera">
+        <nav class="barra">
+            <img class="manzana-1" src="imagenes/manzana-1.png" alt="gente de colores" width="65" height="65" />
+            <p id="logo">MR</p>
+            <a href="#">Portfolio</a>
+            <a href="#">sobre mí</a>
+            <a href="#">Contacto</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="titulos">
+            <div class="malena-rifai">
+                <h1> mi POrtfolio </h1>
+                <h2>Creo que así se deberia ver un portfolio</h2>
+            </div>
+        </section>
+        <div class="gallery-container">
+            <!-- Foto 1 -->
+            <div class="gallery-item">
+                <a href="imagenes/cementerio-recoleta.png" data-fancybox="gallery" data-caption="Conozca Recoleta - Computación III">
+                    <img src="imagenes/cementerio-recoleta.png" alt="cementerio-recoleta">
+                    <div class="gallery-overlay">
+                        <h3>Página web «Conozca Recoleta»</h3>
+                        <p>Computación III - TP grupal - 2026</p>
+                    </div>
+                </a>
+            </div>
+            <!-- Foto 1 -->
+            <div class="gallery-item">
+                <img src="imagenes/teatro-de-guerra.png" alt="teatro-de-guerra">
+                <div class="gallery-overlay">
+                    <h3>Afiche «Teatro de guerra»</h3>
+                    <p>Taller de diseño II - 2024</p>
+                </div>
+            </div>
+            <!-- Foto 1 -->
+            <div class="gallery-item">
+                <img src="imagenes/menta-negra.png" alt="menta-negra">
+                <div class="gallery-overlay">
+                    <h3>Página web «Conozca Recoleta»</h3>
+                    <p>Computación III - TP grupal - 2026</p>
+                </div>
+            </div>
+            <!-- Foto 1 -->
+            <div class="gallery-item">
+                <img src="imagenes/plato-limones.png" alt="plato-limones">
+                <div class="gallery-overlay">
+                    <h3>Página web «Conozca Recoleta»</h3>
+                    <p>Computación III - TP grupal - 2026</p>
+                </div>
+            </div>
+            <!-- Foto 1 -->
+            <div class="gallery-item">
+                <img src="imagenes/pickpocket.png" alt="pickpocket">
+                <div class="gallery-overlay">
+                    <h3>Página web «Conozca Recoleta»</h3>
+                    <p>Computación III - TP grupal - 2026</p>
+                </div>
+            </div>
+    </main>
+
+    <footer class="footer">
+        <!-- 1. Bloque Cátedra -->
+        <div class="catedra">
+            <p>Computación III</p>
+            <p>Cátedra Wischñevsky 2026</p>
+        </div>
+
+        <!-- 2. Bloque Central: Manzana -->
+        <div class="imagen-footer">
+            <img class="manzana-footer" src="img/imagen-footer.png" alt="manzana mordida" width="65" height="65">
+            <p class="texto-manzana">ñam ñam ñam</p>
+        </div>
+
+        <!-- 3. Bloque Derecho: Redes + Correo -->
+        <div class="contacto-redes">
+            <ul class="redes">
+                <li>
+                    <a href="#" target="_blank" rel="noopener noreferrer">
+                        <img class="icono-red" src="img/behance.png" alt="Behance" width="40" height="40">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/maleable.r?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw=="
+                        target="_blank" rel="noopener noreferrer">
+                        <img class="icono-red" src="img/instagram.png" alt="Instagram" width="40" height="40">
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_blank" rel="noopener noreferrer">
+                        <img class="icono-red" src="img/linkedin.png" alt="LinkedIn" width="35" height="35">
+                    </a>
+                </li>
+            </ul>
+
+            <p class="email-footer">malErifai@gmail.com</p>
+        </div>
+    </footer>
+    <script src="lightbox/jquery.min.js"></script>
+    <script src="lightbox/jquery.fancybox.js"></script>
+    <a href="#top" id="volver-top">
+        <svg viewBox="0 0 350.81 350.81">
+            <circle id="circulito" cx="175.4" cy="175.4" r="175.4" />
+            <path id="flechita"
+                d="M189.74,56.27l69.85,69.84c7.85,7.85,7.85,20.59,0,28.44-7.85,7.85-20.59,7.85-28.43,0l-36.88-36.88v163.63c0,10.53-8.61,19.14-19.14,19.14h0c-10.53,0-19.14-8.61-19.14-19.14V118.46s-36.35,36.34-36.35,36.34c-7.85,7.85-20.58,7.85-28.43,0-3.92-3.92-5.89-9.07-5.89-14.22,0-5.14,1.97-10.29,5.89-14.22l70.1-70.1c7.85-7.85,20.58-7.85,28.43,0h0Z" />
+        </svg>
+    </a>
+    <script>
+        const boton = document.getElementById("volver-top");
+        window.addEventListener("scroll", function () {
+            if (window.scrollY > 1080) {
+                boton.classList.add("visible");
+            }
+            else {
+                boton.classList.remove("visible");
+            }
+        });
+    </script>
+</body>
+
+</html>

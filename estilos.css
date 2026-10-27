@@ -1,0 +1,626 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* =======================================================
+   1. RESET GENERAL Y FUENTES (@font-face)
+   ======================================================= */
+
+* {
+    font-family: 'helvetica', sans-serif;
+    text-align: start;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+p {
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* Declaración de fuentes personalizadas */
+@font-face {
+    font-family: "helvetica";
+    src: url("fuentes/helvetica-neue-5/HelveticaNeueRoman.otf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "anisete";
+    src: url("fuentes/Anisette\ Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "ohg";
+    src: url("fuentes/ohgumi-playful-display-trio-style-font/OhgumiRegular-q2rv0-BF6acc55d930b13.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* Variables de color globales */
+:root {
+    --rosa-pop-chill: #f6e1eb;
+    --rosa-pop: #ff3898;
+    --amarillazo: #ffd628;
+    --verde: #24d46d;
+    --azul: #2227f7;
+    --texto-oscuro: #000000;
+}
+
+/* =======================================================
+   2. ESTRUCTURA BASE Y NAVEGACIÓN
+   ======================================================= */
+
+body {
+    background: linear-gradient(0deg, var(--fondo-azul, #D9D9EE) 0%, var(--fondo-azul, #D9D9EE) 100%), var(--fondo, rgba(231, 231, 231, 0.20));
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header / Botonera general */
+.botonera {
+    width: 100%;
+    height: 96px;
+    background-color: var(--rosa-pop-chill);
+    display: flex;
+    align-items: center;
+}
+
+/* Barra de navegación interna */
+.barra {
+    width: 100%;
+    max-width: 1920px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 60px;
+    display: flex;
+    align-items: center;
+}
+
+/* Imagen de la manzana en navbar */
+.manzana-1 {
+    width: 65px;
+    height: 65px;
+    object-fit: contain;
+    display: block;
+}
+
+/* Texto del logo */
+#logo {
+    font-family: 'anisete', sans-serif;
+    font-size: 25px;
+    color: var(--azul);
+    margin-left: 20px;
+    margin-right: auto;
+}
+
+/* Enlaces estilo pastilla en navbar */
+.barra a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 63px;
+    padding: 0 35px;
+    margin-left: 67px;
+    background-color: var(--amarillazo);
+    border: 2px solid var(--verde);
+    border-radius: 9999px;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+    font-family: 'ohg', sans-serif;
+    letter-spacing: 0.02em;
+    transition: transform 0.15s ease, opacity 0.15s ease;
+}
+
+.barra a:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
+
+/* =======================================================
+   3. HERO: MALENA RIFAI
+   ======================================================= */
+
+.titulos {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.malena-rifai {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1920px;
+    height: 477px;
+    padding: 186px 20px 49px;
+    gap: 10px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.malena-rifai h1 {
+    font-family: 'anisete', sans-serif;
+    font-size: 70px;
+    font-weight: 400;
+    line-height: 70px;
+    color: var(--azul);
+    margin: 0;
+}
+
+.malena-rifai h2 {
+    font-family: 'helvetica', sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 70px;
+    color: var(--azul);
+    margin: 0;
+}
+
+/* =======================================================
+   4. CONTENEDOR PRINCIPAL (MAIN)
+   ======================================================= */
+
+main {
+    display: flex;
+    width: 100%;
+    max-width: 1568px;
+    height: auto;
+    margin: 0 auto;
+    padding: 26px 17px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 68px;
+    box-sizing: border-box;
+}
+
+/* =======================================================
+   5. SECCIÓN 1 (PERFIL)
+   ======================================================= */
+
+.seccion-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 99px;
+    width: 100%;
+    max-width: 1213px;
+    margin: 0 auto;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+.seccion-1-columna:first-child {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.seccion-1-columna img {
+    width: 480px;
+    height: 480px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    display: block;
+}
+
+.seccion-1-columna:last-child {
+    width: 563px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: #000000;
+}
+
+.seccion-1-columna h3 {
+    font-family: 'anisete', sans-serif;
+    font-size: 30px;
+    line-height: 23px;
+    font-weight: 400;
+    color: #000000;
+    margin: 0;
+}
+
+.seccion-1-columna p {
+    font-family: 'helvetica', sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #000000;
+    margin: 0;
+}
+
+/* =======================================================
+   6. TIPOGRAFÍAS DE COMPONENTES (SPAN = OHG, LI = HELVETICA)
+   ======================================================= */
+
+span,
+.card-acordeon span,
+.pill-titulo,
+.listado-idiomas span,
+.listado-idiomas .nivel {
+    font-family: 'ohg', sans-serif;
+}
+
+li,
+.lista-desplegada li,
+.listado-idiomas li {
+    font-family: 'helvetica', 'Helvetica Neue', Arial, sans-serif;
+}
+
+/* =======================================================
+   7. SECCIÓN 2: ACORDEONES (ÁREAS, COMPETENCIAS, HERRAMIENTAS, IDIOMAS)
+   ======================================================= */
+
+.seccion-2 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 1358px;
+    margin: 59px auto 42px;
+    padding: 0 40px;
+    gap: 60px;
+    box-sizing: border-box;
+}
+
+.card-acordeon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    box-sizing: border-box;
+}
+
+/* Pastillas verdes fijadas en 382px x 116px */
+.pill-toggle {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 382px;
+    height: 116px;
+    flex-shrink: 0;
+    padding: 16px 20px 16px 0;
+    gap: 40px;
+    background-color: var(--verde);
+    border-radius: 58px;
+    border: none;
+    cursor: pointer;
+    box-sizing: border-box;
+    text-decoration: none;
+    transition: transform 0.15s ease, filter 0.15s ease;
+}
+
+.pill-toggle:hover {
+    transform: translateY(-2px);
+    filter: brightness(0.96);
+}
+
+.icono-flecha {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    display: block;
+    transform: rotate(-180deg);
+}
+
+.pill-titulo {
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 70px;
+    color: var(--azul);
+    white-space: nowrap;
+}
+
+/* Listas desplegadas (Áreas de interés y Competencias) */
+.lista-desplegada {
+    list-style-type: disc;
+    list-style-position: outside;
+    width: 262px;
+    margin: 0 auto;
+    padding-left: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+    box-sizing: border-box;
+}
+
+.lista-desplegada li {
+    width: 100%;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    color: var(--texto-oscuro);
+    text-align: left;
+}
+
+/* Grilla de Herramientas (3 filas x 2 columnas de íconos) */
+.grilla-herramientas {
+    display: grid;
+    width: 148.5px;
+    height: 227px;
+    row-gap: 38px;
+    column-gap: 36px;
+    grid-template-rows: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-auto-flow: row;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.grilla-herramientas li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grilla-herramientas img {
+    display: block;
+    object-fit: contain;
+}
+
+/* Lista de Idiomas */
+.listado-idiomas {
+    width: 262px;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    box-sizing: border-box;
+}
+
+.listado-idiomas li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    font-size: 16px;
+    line-height: 22px;
+    color: var(--texto-oscuro, #000000);
+}
+
+.listado-idiomas .nivel {
+    font-weight: 700;
+    color: var(--azul, #2227F3);
+    margin-left: 12px;
+}
+
+/* =======================================================
+   8. FOOTER
+   ======================================================= */
+
+.footer {
+    background-color: var(--rosa-pop-chill);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1920px;
+    min-height: 160px;
+    height: auto;
+    margin: 0 auto;
+    padding: 34px 96px 25px;
+    gap: 40px;
+    box-sizing: border-box;
+    clear: both;
+}
+
+/* Bloque 1: Cátedra */
+.catedra {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 10px 10px 0 10px;
+    gap: 6px;
+    flex-shrink: 0;
+    box-sizing: border-box;
+}
+
+.catedra p {
+    margin: 0;
+    font-family: 'helvetica', sans-serif;
+    font-size: 14px;
+    color: var(--texto-oscuro, #000000);
+}
+
+/* Bloque 2: Manzana central */
+.imagen-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+    width: 88px;
+    flex-shrink: 0;
+}
+
+.manzana-footer {
+    width: 65px;
+    height: 65px;
+    aspect-ratio: 1 / 1;
+    object-fit: contain;
+    display: block;
+}
+
+.texto-manzana {
+    margin: 0;
+    color: var(--rosa-pop, #FF3797);
+    font-family: 'helvetica', sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: center;
+}
+
+/* Bloque 3: Redes y contacto */
+.contacto-redes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 230px;
+    gap: 10px;
+    flex-shrink: 0;
+    box-sizing: border-box;
+}
+
+.redes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.redes li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.redes a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.icono-red {
+    display: block;
+    object-fit: contain;
+}
+
+.email-footer {
+    margin: 0;
+    color: #000000;
+    text-align: center;
+    font-family: 'anisete', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 23px;
+    align-self: stretch;
+}
+
+
+/* GALERÍA */
+.gallery-container {
+    display: flex;
+    gap: 20px;
+    max-width: 1000px;
+    margin: 40px auto;
+    font-family: sans-serif;
+}
+
+/* Tarjeta individual */
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+/* Imagen */
+.gallery-item img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.gallery-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 35%;
+    background: rgba(0, 0, 0, 0.75);
+    /* Fondo oscuro semitransparente */
+    backdrop-filter: blur(5px);
+    /* Efecto vidrio esmerilado */
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
+
+    /* Lo movemos hacia abajo para ocultarlo inicialmente */
+    transform: translateY(100%);
+    transition: transform 0.3s ease-in-out;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.gallery-overlay h3 {
+    margin: 0 0 5px 0;
+    font-size: 1.1rem;
+}
+
+.gallery-overlay p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #ddd;
+}
+
+/* EFECTO HOVER */
+.gallery-item:hover .gallery-overlay {
+    transform: translateY(0);
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05);
+}
+
+/* VOLVER */
+
+#volver-top {
+    position: fixed;
+    bottom: 70px;
+    right: 70px;
+    z-index: 999;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.3s;
+    width: 60px;
+    height: 60px;
+}
+
+#volver-top.visible {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+#volver-top #circulito {
+    fill: var(--banana);
+}
+
+#volver-top #flechita {
+    fill: var(--flynnpaff);
+}
+
+#volver-top:hover #circulito {
+    fill: var(--mandarina);
+}
+
+#volver-top:hover #flechita {
+    fill: var(--pitufo);
+}
