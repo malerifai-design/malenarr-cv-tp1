@@ -1,45 +1,142 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 
 <head>
-    <meta charset="utf-8" />
-    <title> Malena Rifai - Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Malena Rifai - Portfolio</title>
+
     <link href="estilos.css" rel="stylesheet" type="text/css">
     <link rel="icon" type="image/x-icon" href="img/favicon-32x32.png">
 </head>
 
 <body>
+
     <header class="botonera">
         <nav class="barra">
-            <img class="manzana-1" src="imagenes/manzana-1.png" alt="gente de colores" width="65" height="65" />
-            <p id="logo">MR</p>
-            <a href="#">Portfolio</a>
-            <a href="#">sobre mí</a>
-            <a href="#">Contacto</a>
+
+            <!-- Logo -->
+            <a class="logo" href="index.html">
+                <img class="manzana-1" src="imagenes/manzana-1.png" alt="Manzana" width="65" height="65">
+                <span id="logo">MR</span>
+            </a>
+
+            <!-- Navegación -->
+            <div class="menu">
+                <a class="boton" href="portfolio.html">Portfolio</a>
+                <a class="boton" href="#">Sobre mí</a>
+                <a class="boton" href="contacto.html">Contacto</a>
+            </div>
+
         </nav>
     </header>
 
+
     <main>
+
+        <!-- TÍTULOS -->
         <section class="titulos">
             <div class="malena-rifai">
-                <h1> Llame ya </h1>
-                <h2> En realidad, tipea y cliquea</h2>
+                <h1>Llame ya</h1>
+                <h2>En realidad, tipea y cliquea</h2>
             </div>
         </section>
-        <form method="post" action="" target="_blank" enctype="text/plain">
-            <section>
-                <div>
+
+        <!-- FORMULARIO -->
+        <form class="formulario-contacto" method="post">
+
+            <div class="formulario-contenido">
+
+                <!-- NOMBRE -->
+                <div class="campo-formulario">
                     <label for="nombre">Apellido, nombre</label>
-                    <input type="text" name="nombre" id="nombre" maxlength="30" placeholder="Perez, Fulanito" required>
+                    <input type="text" name="nombre" id="nombre" maxlength="60" placeholder="Perez, Fulano" required>
                 </div>
-                <div>
+
+                <!-- TEAM -->
+                <fieldset class="grupo-opciones">
+                    <legend>¿Qué team sos?</legend>
+
+                    <div class="check-list">
+                        <label>
+                            team GATOS
+                            <input type="checkbox" name="team" value="GATOS">
+                            <span class="check-personalizado"></span>
+                        </label>
+
+                        <label>
+                            team PERROS
+                            <input type="checkbox" name="team" value="PERROS">
+                            <span class="check-personalizado"></span>
+                        </label>
+
+                        <label>
+                            soy tibio/a
+                            <input type="checkbox" name="team" value="tibio">
+                            <span class="check-personalizado"></span>
+                        </label>
+                    </div>
+                </fieldset>
+
+                <!-- EMAIL -->
+                <div class="campo-formulario">
                     <label for="email">Email</label>
-                    <input type="email" name="email" id="email" placeholder="martaminujin@tu servicios de email.com"
+                    <input type="email" name="email" id="email" placeholder="martaminujin@tuserviciodeemail.com"
                         required>
                 </div>
-            </section>
-            <div class="check-list">
-                <label>Diseño gráfico <input type="checkbox" name="servicio" value="Diseño Gráfico" id="diseño"></label>
-                <label>Fotografía<input type="checkbox" name="servicio" value="Fotografía" id="fotografia"></label>
-                <label>Ilustración<input type="checkbox" name="servicio" value="Ilustración" id="ilustración"></label>
+
+                <!-- PROYECTOS -->
+                <fieldset class="grupo-opciones">
+                    <legend>Quiero que hagamos un proyecto:</legend>
+
+                    <div class="check-list">
+                        <label>
+                            Editorial
+                            <input type="checkbox" name="servicio" value="Editorial">
+                            <span class="check-personalizado"></span>
+                        </label>
+
+                        <label>
+                            Afiches
+                            <input type="checkbox" name="servicio" value="Afiches">
+                            <span class="check-personalizado"></span>
+                        </label>
+
+                        <label>
+                            Fotografía
+                            <input type="checkbox" name="servicio" value="Fotografía">
+                            <span class="check-personalizado"></span>
+                        </label>
+
+                        <label>
+                            Cerámica
+                            <input type="checkbox" name="servicio" value="Cerámica">
+                            <span class="check-personalizado"></span>
+                        </label>
+
+                        <label>
+                            Identidad
+                            <input type="checkbox" name="servicio" value="Identidad">
+                            <span class="check-personalizado"></span>
+                        </label>
+                    </div>
+                </fieldset>
+
+                <!-- MENSAJE -->
+                <div class="campo-formulario">
+                    <label for="mensaje">Contame en qué pensaste</label>
+                    <textarea name="mensaje" id="mensaje" placeholder="Hola Wanda, me muuueroo..." required></textarea>
+                </div>
+
+                <!-- BOTÓN -->
+                <div class="contenedor-enviar">
+                    <button type="submit" class="button-enviar">
+                        Enviar
+                    </button>
+                </div>
+
             </div>
+        </form>
+
+    </main>

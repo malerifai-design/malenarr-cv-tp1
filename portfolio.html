@@ -1,22 +1,42 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
+
 
 <head>
-    <meta charset="utf-8" />
-    <title> Malena Rifai - Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Malena Rifai - Portfolio</title>
+
+    <!-- Estilos de la página -->
     <link href="estilos.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" type="text/css" href="lightbox/jquery.fancybox.css">
+
+    <!-- Estilos de Fancybox -->
+    <link href="lightbox/jquery.fancybox.css" rel="stylesheet" type="text/css">
+
+    <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="img/favicon-32x32.png">
 </head>
 
+
 <body>
+
     <header class="botonera">
         <nav class="barra">
-            <img class="manzana-1" src="imagenes/manzana-1.png" alt="gente de colores" width="65" height="65" />
-            <p id="logo">MR</p>
-            <a href="#">Portfolio</a>
-            <a href="#">sobre mí</a>
-            <a href="#">Contacto</a>
+
+            <!-- Logo -->
+            <a class="logo" href="index.html">
+                <img class="manzana-1" src="imagenes/manzana-1.png" alt="Manzana" width="65" height="65">
+                <span id="logo">MR</span>
+            </a>
+
+            <!-- Navegación -->
+            <div class="menu">
+                <a class="boton" href="portfolio.html">Portfolio</a>
+                <a class="boton" href="#">Sobre mí</a>
+                <a class="boton" href="contacto.html">Contacto</a>
+            </div>
+
         </nav>
     </header>
 
@@ -30,7 +50,8 @@
         <div class="gallery-container">
             <!-- Foto 1 -->
             <div class="gallery-item">
-                <a href="imagenes/cementerio-recoleta.png" data-fancybox="gallery" data-caption="Conozca Recoleta - Computación III">
+                <a href="imagenes/cementerio-recoleta.png" data-fancybox="gallery"
+                    data-caption="Conozca Recoleta - Computación III">
                     <img src="imagenes/cementerio-recoleta.png" alt="cementerio-recoleta">
                     <div class="gallery-overlay">
                         <h3>Página web «Conozca Recoleta»</h3>
@@ -38,38 +59,93 @@
                     </div>
                 </a>
             </div>
-            <!-- Foto 1 -->
+            <!-- Foto 2 -->
             <div class="gallery-item">
-                <img src="imagenes/teatro-de-guerra.png" alt="teatro-de-guerra">
-                <div class="gallery-overlay">
-                    <h3>Afiche «Teatro de guerra»</h3>
-                    <p>Taller de diseño II - 2024</p>
-                </div>
+                <a href="imagenes/teatro-de-guerra-overlay.png" data-fancybox="gallery"
+                    data-caption="Afiche «Teatro de guerra» - TD II">
+                    <img src="imagenes/teatro-de-guerra.png" alt="teatro-de-guerra">
+                    <div class="gallery-overlay">
+                        <h3>Afiche «Teatro de guerra»</h3>
+                        <p>Taller de diseño II - 2024</p>
+                    </div>
+                </a>
             </div>
-            <!-- Foto 1 -->
+            <!-- Foto 3 -->
             <div class="gallery-item">
-                <img src="imagenes/menta-negra.png" alt="menta-negra">
-                <div class="gallery-overlay">
-                    <h3>Página web «Conozca Recoleta»</h3>
-                    <p>Computación III - TP grupal - 2026</p>
-                </div>
+                <a href="imagenes/menta-negra.png" data-fancybox="gallery"
+                    data-caption="Menú para «Menta Negra» - ET II">
+                    <img src="imagenes/menta-negra.png" alt="menta-negra">
+                    <div class="gallery-overlay">
+                        <h3>Menú para «Menta Negra»</h3>
+                        <p>Espacio tipográfico II - 2025</p>
+                    </div>
+                </a>
             </div>
-            <!-- Foto 1 -->
+            <!-- Foto 4 -->
             <div class="gallery-item">
-                <img src="imagenes/plato-limones.png" alt="plato-limones">
-                <div class="gallery-overlay">
-                    <h3>Página web «Conozca Recoleta»</h3>
-                    <p>Computación III - TP grupal - 2026</p>
-                </div>
+                <a href="imagenes/plato-limones-overlay.png" data-fancybox="gallery"
+                    data-caption="Vajilla amalfitana - Cerámica">
+                    <img src="imagenes/plato-limones.png" alt="plato-limones">
+                    <div class="gallery-overlay">
+                        <h3>Vajilla amalfitana</h3>
+                        <p>Cerámica - 2026</p>
+                    </div>
+                </a>
             </div>
-            <!-- Foto 1 -->
+            <!-- Foto 5 -->
             <div class="gallery-item">
-                <img src="imagenes/pickpocket.png" alt="pickpocket">
-                <div class="gallery-overlay">
-                    <h3>Página web «Conozca Recoleta»</h3>
-                    <p>Computación III - TP grupal - 2026</p>
-                </div>
+                <a href="imagenes/pickpocket-overlay.png" data-fancybox="gallery"
+                    data-caption="Pickpocket - Fotografía">
+                    <img src="imagenes/pickpocket.png" alt="pickpocket">
+                    <div class="gallery-overlay">
+                        <h3>Pickpocket</h3>
+                        <p>Fotografía - 2024</p>
+                    </div>
+                </a>
             </div>
+            <!-- Foto 6 -->
+            <div class="gallery-item">
+                <a href="imagenes/cuero.png" data-fancybox="gallery" data-caption="Cuero - FyPV">
+                    <img src="imagenes/cuero.png" alt="metal">
+                    <div class="gallery-overlay">
+                        <h3>Cuero</h3>
+                        <p>Fotografía y percepción visual- 2025</p>
+                    </div>
+                </a>
+            </div>
+            <!-- Foto 7 -->
+            <div class="gallery-item">
+                <a href="imagenes/metal.png" data-fancybox="gallery" data-caption="Metal - FyPV">
+                    <img src="imagenes/metal.png" alt="metal">
+                    <div class="gallery-overlay">
+                        <h3>Metal</h3>
+                        <p>Fotografía y percepción visual- 2025</p>
+                    </div>
+                </a>
+            </div>
+            <!-- Foto 8 -->
+            <div class="gallery-item">
+                <a href="imagenes/madera.png" data-fancybox="gallery" data-caption="Madera - FyPV">
+                    <img src="imagenes/madera.png" alt="madera">
+                    <div class="gallery-overlay">
+                        <h3>Madera</h3>
+                        <p>Fotografía y percepción visual- 2025</p>
+                    </div>
+                </a>
+            </div>
+            <!-- Foto 9 -->
+            <div class="gallery-item">
+                <a href="imagenes/vidrio.png" data-fancybox="gallery" data-caption="Vidrio - FyPV">
+                    <img src="imagenes/vidrio.png" alt="vidrio">
+                    <div class="gallery-overlay">
+                        <h3>Vidrio</h3>
+                        <p>Fotografía y percepción visual- 2025</p>
+                    </div>
+                </a>
+            </div>
+
+        </div><!-- Cierra gallery-container -->
+
     </main>
 
     <footer class="footer">
@@ -129,10 +205,26 @@
             }
         });
     </script>
+
+    <script>
+        $(document).ready(function () {
+
+            $('[data-fancybox="gallery"]').fancybox({
+                loop: true,
+                buttons: [
+                    "zoom",
+                    "slideShow",
+                    "thumbs",
+                    "close"
+                ],
+                animationEffect: "fade",
+                transitionEffect: "slide"
+            });
+
+        });
+    </script>
+
 </body>
-
-
-
 
 
 </html>
