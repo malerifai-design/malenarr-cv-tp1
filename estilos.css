@@ -49,6 +49,7 @@ p {
     --azul: #2227f7;
     --texto-oscuro: #000000;
 }
+/* Está genial lo de las variables para los colores, fijate que se usan poco y tenes colores que se repiten pero no están como variable, si le pegas una vuelta de tuerca podrias tener más */
 
 /* =======================================================
    2. ESTRUCTURA BASE Y NAVEGACIÓN
@@ -103,7 +104,7 @@ body {
 /* Manzana */
 
 .manzana-1 {
-    width: 65px;
+    width: 65px; /* No setees los tamaños de las imagenes en CSS, dejalo en HTML nomas */
     height: 65px;
     object-fit: contain;
     display: block;
@@ -113,7 +114,7 @@ body {
 
 #logo {
     font-family: 'anisete', sans-serif;
-    font-size: 25px;
+    font-size: 25px; /* Vi que usaste rems en otro lado, te conviene ser consistente, usar rem/em para tipografias en todos lados */
     color: var(--azul);
     margin: 0;
 }
@@ -188,7 +189,7 @@ body {
     justify-content: center;
     align-items: center;
     width: 100%;
-    max-width: 1920px;
+    max-width: 1920px; /* Cuidado especialmente con estos tamaños que son de "pantallas", porque no todas las pantallas tienen 1920 de ancho, algunas mucho mas como las 4k */
     height: 477px;
     padding: 186px 20px 49px;
     gap: 10px;
@@ -285,7 +286,9 @@ main {
     font-family: 'helvetica', sans-serif;
     font-size: 18px;
     line-height: 24px;
-    font-weight: 400;
+    font-weight: 400; 
+    /* Tenes varias de estas font-weight: 400 que no hacen nada. Si nunca se pone el peso de la fuente para los `p` en otro valor que no sea `normal(400)`, para que volver a ponerlo? */
+    /* A veces queda cuando haces una copia desde Figma, que lo agrega solo. Está perfecto apoyarse en la herramienta, pero si copias lo que te autogenera, tenes que hacer un filtro para no poner cosas de más. */
     color: #000000;
     margin: 0;
 }
@@ -378,7 +381,7 @@ li,
     list-style-position: outside;
     width: 262px;
     margin: 0 auto;
-    padding-left: 1.25rem;
+    padding-left: 1.25rem; /* No uses tamaños tipograficos para medidas estructurales (margenes, paddings, gaps, etc.) */
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -605,6 +608,8 @@ li,
 /* ==========================================
    DISTRIBUCIÓN DE LOS PROYECTOS
 ========================================== */
+
+/* Todos los Nth children de aca abajo los podes resolver con IDs. Lo dificil de laburarlo con Nth es que te estas comprando un problema si queres agregarle mas contenido. Ponele que agregas un proyecto nuevo, tenes que tocar todos los Nth que vengan después y acordarte cual era cual */
 
 /* 1. RECOLETA */
 
