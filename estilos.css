@@ -1,8 +1,9 @@
 @charset "utf-8";
-/* CSS Document */
 
 /* =======================================================
+
    1. RESET GENERAL Y FUENTES (@font-face)
+
    ======================================================= */
 
 * {
@@ -18,7 +19,6 @@ p {
     margin: 0;
 }
 
-/* Declaración de fuentes personalizadas */
 @font-face {
     font-family: "helvetica";
     src: url("fuentes/helvetica-neue-5/HelveticaNeueRoman.otf") format("truetype");
@@ -33,14 +33,8 @@ p {
     font-style: normal;
 }
 
-@font-face {
-    font-family: "ohg";
-    src: url("fuentes/ohgumi-playful-display-trio-style-font/OhgumiRegular-q2rv0-BF6acc55d930b13.ttf") format("truetype");
-    font-weight: bold;
-    font-style: normal;
-}
-
 /* Variables de color globales */
+
 :root {
     --rosa-pop-chill: #f6e1eb;
     --rosa-pop: #ff3898;
@@ -48,10 +42,13 @@ p {
     --verde: #24d46d;
     --azul: #2227f7;
     --texto-oscuro: #000000;
+
 }
 
 /* =======================================================
+
    2. ESTRUCTURA BASE Y NAVEGACIÓN
+
    ======================================================= */
 
 body {
@@ -62,8 +59,11 @@ body {
 }
 
 /* =========================
+
    BOTONERA
+
 ========================= */
+
 .botonera {
     width: 100%;
     height: 96px;
@@ -80,7 +80,6 @@ body {
     height: 100%;
     margin: 0 auto;
     padding: 0 60px;
-
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -88,25 +87,35 @@ body {
 }
 
 /* =========================
+
    LOGO
+
 ========================= */
 
 .logo {
+
     display: inline-flex;
+
     align-items: center;
+
     gap: 20px;
 
     text-decoration: none;
+
     flex-shrink: 0;
+
 }
 
 /* Manzana */
 
 .manzana-1 {
+    padding-left: 60px;
+    padding-right: 10px;
     width: 65px;
     height: 65px;
     object-fit: contain;
     display: block;
+    gap: 20px;
 }
 
 /* Iniciales */
@@ -116,16 +125,19 @@ body {
     font-size: 25px;
     color: var(--azul);
     margin: 0;
+
 }
 
 /* =========================
+
    MENÚ DE NAVEGACIÓN
+
 ========================= */
 
 .menu {
     display: flex;
     align-items: center;
-    gap: 24px;
+    gap: 67px;
 }
 
 /* Botones */
@@ -134,21 +146,17 @@ body {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-
     min-height: 63px;
     padding: 0 35px;
     box-sizing: border-box;
-
     background-color: var(--amarillazo);
     border: 2px solid var(--verde);
     border-radius: 9999px;
-
     color: #ffffff;
-    font-family: 'ohg', sans-serif;
+    font-family: 'anisete', sans-serif;
     font-size: 16px;
     letter-spacing: 0.02em;
     text-decoration: none;
-
     transition:
         background-color 0.2s ease,
         color 0.2s ease,
@@ -156,9 +164,10 @@ body {
         opacity 0.15s ease;
 }
 
-/* HOVER: al pasar el cursor */
+/* BOTÓN ACTIVO: MISMO ESTILO QUE HOVER */
 
-.boton:hover {
+.boton:hover,
+.boton.activo {
     background-color: var(--rosa-pop);
     color: var(--azul);
     transform: translateY(-2px);
@@ -173,13 +182,16 @@ body {
 }
 
 /* =======================================================
+
    3. HERO: MALENA RIFAI
+
    ======================================================= */
 
 .titulos {
     width: 100%;
     display: flex;
     justify-content: center;
+    padding: 32px;
 }
 
 .malena-rifai {
@@ -197,62 +209,94 @@ body {
 }
 
 .malena-rifai h1 {
+
     font-family: 'anisete', sans-serif;
+
     font-size: 70px;
+
     font-weight: 400;
+
     line-height: 70px;
+
     color: var(--azul);
+
     margin: 0;
+
 }
 
 .malena-rifai h2 {
+
     font-family: 'helvetica', sans-serif;
+
     font-size: 30px;
+
     font-weight: 400;
+
     line-height: 70px;
+
     color: var(--azul);
+
     margin: 0;
+
 }
 
 /* =======================================================
+
    4. CONTENEDOR PRINCIPAL (MAIN)
+
    ======================================================= */
 
 main {
+
     display: flex;
+
     width: 100%;
+
     max-width: 1568px;
+
     height: auto;
+
     margin: 0 auto;
-    padding: 26px 17px;
+
+    padding: 10px;
+
     flex-direction: column;
+
     justify-content: flex-start;
+
     align-items: center;
-    gap: 68px;
+
+
     box-sizing: border-box;
+
 }
 
 /* =======================================================
+
    5. SECCIÓN 1 (PERFIL)
+
    ======================================================= */
 
 .seccion-1 {
+
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 99px;
+    gap: 100px;
     width: 100%;
     max-width: 1213px;
     margin: 0 auto;
-    padding: 40px;
+    padding: 31px 52px;
     box-sizing: border-box;
 }
 
 .seccion-1-columna:first-child {
+
     flex-shrink: 0;
     display: flex;
     align-items: center;
     justify-content: center;
+
 }
 
 .seccion-1-columna img {
@@ -264,21 +308,23 @@ main {
 }
 
 .seccion-1-columna:last-child {
+
     width: 563px;
     flex-shrink: 0;
     display: flex;
     flex-direction: column;
-    gap: 20px;
     color: #000000;
 }
 
 .seccion-1-columna h3 {
+
     font-family: 'anisete', sans-serif;
     font-size: 30px;
     line-height: 23px;
     font-weight: 400;
     color: #000000;
     margin: 0;
+    padding-bottom: 20px;
 }
 
 .seccion-1-columna p {
@@ -291,7 +337,9 @@ main {
 }
 
 /* =======================================================
-   6. TIPOGRAFÍAS DE COMPONENTES (SPAN = OHG, LI = HELVETICA)
+
+   6. TIPOGRAFÍAS DE COMPONENTES
+
    ======================================================= */
 
 span,
@@ -299,161 +347,276 @@ span,
 .pill-titulo,
 .listado-idiomas span,
 .listado-idiomas .nivel {
-    font-family: 'ohg', sans-serif;
+    font-family: 'anisete', sans-serif;
 }
 
 li,
+
 .lista-desplegada li,
-.listado-idiomas li {
-    font-family: 'helvetica', 'Helvetica Neue', Arial, sans-serif;
+{
+font-family: 'helvetica', 'Helvetica Neue', Arial, sans-serif;
 }
 
 /* =======================================================
+
    7. SECCIÓN 2: ACORDEONES (ÁREAS, COMPETENCIAS, HERRAMIENTAS, IDIOMAS)
+
    ======================================================= */
 
 .seccion-2 {
+
     display: flex;
     justify-content: center;
     align-items: flex-start;
     width: 100%;
     max-width: 1358px;
+
     margin: 59px auto 42px;
+
     padding: 0 40px;
+
     gap: 60px;
+
     box-sizing: border-box;
+
 }
 
 .card-acordeon {
+
     display: flex;
+
     flex-direction: column;
+
     align-items: center;
+
     gap: 24px;
+
     box-sizing: border-box;
+
 }
 
 /* Pastillas verdes fijadas en 382px x 116px */
+
 .pill-toggle {
+
     display: inline-flex;
+
     justify-content: center;
+
     align-items: center;
+
     width: 382px;
+
     height: 116px;
+
     flex-shrink: 0;
+
     padding: 16px 20px 16px 0;
+
     gap: 40px;
+
     background-color: var(--verde);
+
     border-radius: 58px;
+
     border: none;
+
     cursor: pointer;
+
     box-sizing: border-box;
+
     text-decoration: none;
+
     transition: transform 0.15s ease, filter 0.15s ease;
+
 }
 
 .pill-toggle:hover {
+
     transform: translateY(-2px);
+
     filter: brightness(0.96);
+
 }
 
 .icono-flecha {
+
     width: 40px;
+
     height: 40px;
+
     flex-shrink: 0;
+
     display: block;
+
     transform: rotate(-180deg);
+
 }
 
 .pill-titulo {
+
     font-size: 28px;
+
     font-weight: 400;
+
     line-height: 70px;
+
     color: var(--azul);
+
     white-space: nowrap;
+
 }
 
 /* Listas desplegadas (Áreas de interés y Competencias) */
+
 .lista-desplegada {
+
     list-style-type: disc;
+
     list-style-position: outside;
+
     width: 262px;
+
     margin: 0 auto;
+
     padding-left: 1.25rem;
+
     display: flex;
+
     flex-direction: column;
+
     align-items: flex-start;
+
     gap: 6px;
+
     box-sizing: border-box;
+
 }
 
 .lista-desplegada li {
+
     width: 100%;
+
     font-size: 18px;
+
     font-weight: 400;
+
     line-height: 24px;
+
     color: var(--texto-oscuro);
+
     text-align: left;
+
 }
 
 /* Grilla de Herramientas (3 filas x 2 columnas de íconos) */
+
 .grilla-herramientas {
+
     display: grid;
+
     width: 148.5px;
+
     height: 227px;
+
     row-gap: 38px;
+
     column-gap: 36px;
+
     grid-template-rows: repeat(3, minmax(0, 1fr));
+
     grid-template-columns: repeat(2, minmax(0, 1fr));
+
     grid-auto-flow: row;
+
     list-style: none;
+
     padding: 0;
+
     margin: 0;
+
     box-sizing: border-box;
+
 }
 
 .grilla-herramientas li {
+
     display: flex;
+
     justify-content: center;
+
     align-items: center;
+
 }
 
 .grilla-herramientas img {
+
     display: block;
+
     object-fit: contain;
+
 }
 
-/* Lista de Idiomas */
-.listado-idiomas {
-    width: 262px;
-    margin: 0 auto;
-    padding: 0;
-    list-style: none;
+/* ==========================================
+
+   ACORDEONES INTERACTIVOS
+
+========================================== */
+
+/* ESTADO INICIAL: CONTENIDO OCULTO */
+
+.card-acordeon .lista-desplegada,
+
+.card-acordeon .grilla-herramientas {
+
+    display: none;
+
+}
+
+/* ESTADO DESPLEGADO */
+
+.card-acordeon.abierto .lista-desplegada {
+
     display: flex;
-    flex-direction: column;
-    gap: 10px;
-    box-sizing: border-box;
+
 }
 
-.listado-idiomas li {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    font-size: 16px;
-    line-height: 22px;
-    color: var(--texto-oscuro, #000000);
+.card-acordeon.abierto .grilla-herramientas {
+
+    display: grid;
+
 }
 
-.listado-idiomas .nivel {
-    font-weight: 700;
-    color: var(--azul, #2227F3);
-    margin-left: 12px;
+/* ANIMACIÓN DE LA FLECHA */
+
+.card-acordeon .icono-flecha {
+
+    transition: transform 0.3s ease;
+
 }
+
+/* FLECHA EN ESTADO ABIERTO */
+
+.card-acordeon.abierto .icono-flecha {
+
+    transform: rotate(0deg);
+
+}
+
+/* ACCESIBILIDAD */
+
+.pill-toggle:focus-visible {
+
+    outline: 3px solid var(--azul);
+
+    outline-offset: 4px;
+
+}
+
 
 /* =======================================================
    8. FOOTER
-   ======================================================= */
-
+======================================================= */
 .footer {
     background-color: var(--rosa-pop-chill);
     display: flex;
@@ -470,7 +633,7 @@ li,
     clear: both;
 }
 
-/* Bloque 1: Cátedra */
+/* 8.1. BLOQUE IZQUIERDO: CÁTEDRA */
 .catedra {
     display: flex;
     flex-direction: column;
@@ -484,12 +647,12 @@ li,
 
 .catedra p {
     margin: 0;
-    font-family: 'helvetica', sans-serif;
+    font-family: 'anisete', sans-serif;
     font-size: 14px;
     color: var(--texto-oscuro, #000000);
 }
 
-/* Bloque 2: Manzana central */
+/* 8.2. BLOQUE CENTRAL: MANZANA */
 .imagen-footer {
     display: flex;
     flex-direction: column;
@@ -517,7 +680,7 @@ li,
     text-align: center;
 }
 
-/* Bloque 3: Redes y contacto */
+/* 8.3. BLOQUE DERECHO: REDES Y CONTACTO */
 .contacto-redes {
     display: flex;
     flex-direction: column;
@@ -529,6 +692,7 @@ li,
     box-sizing: border-box;
 }
 
+/* CONTENEDOR DE REDES SOCIALES */
 .redes {
     display: flex;
     align-items: center;
@@ -540,12 +704,14 @@ li,
     width: 100%;
 }
 
+/* ELEMENTOS DE LA LISTA */
 .redes li {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+/* ENLACES DE REDES SOCIALES */
 .redes a {
     display: flex;
     align-items: center;
@@ -553,11 +719,13 @@ li,
     text-decoration: none;
 }
 
+/* IMÁGENES DE REDES SOCIALES */
 .icono-red {
     display: block;
     object-fit: contain;
 }
 
+/* CORREO ELECTRÓNICO */
 .email-footer {
     margin: 0;
     color: #000000;
@@ -569,205 +737,306 @@ li,
     align-self: stretch;
 }
 
+/* 8.4. HOVER DE REDES SOCIALES */
 
+/* Posicionamiento de los enlaces */
+.redes a {
+    position: relative;
+}
+
+/* Transición de imágenes originales y alternativas */
+
+.redes .icono-red {
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Imagen alternativa oculta */
+.redes .icono-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* Ocultar imagen original y desplazarla hacia arriba */
+.redes a:hover .icono-red:not(.icono-hover) {
+    opacity: 0;
+    transform: translateY(-5px);
+}
+
+/* Mostrar imagen alternativa y desplazarla hacia arriba */
+.redes a:hover .icono-hover {
+    opacity: 1;
+    transform: translateY(-5px);
+}
 
 
 /* ==========================================
+
    GALERÍA DE PORTFOLIO
+
 ========================================== */
 
 /* CONTENEDOR PRINCIPAL */
 
 .gallery-container {
+
     display: grid;
 
     grid-template-columns: repeat(9, minmax(0, 1fr));
 
     /* Dos filas para proyectos y una para materiales */
+
     grid-template-rows: 540fr 540fr auto;
 
     column-gap: 20px;
+
     row-gap: 35px;
 
     width: 90%;
+
     max-width: 1583px;
 
     margin: 90px auto 35px;
+
     padding: 0;
 
     box-sizing: border-box;
+
     font-family: sans-serif;
 
     align-items: stretch;
+
 }
 
-
 /* ==========================================
+
    DISTRIBUCIÓN DE LOS PROYECTOS
+
 ========================================== */
 
 /* 1. RECOLETA */
 
 .gallery-item:nth-child(1) {
+
     grid-column: 1 / 4;
+
     grid-row: 1 / 3;
 
     align-self: stretch;
+
 }
 
 /* 2. TEATRO DE GUERRA */
 
 .gallery-item:nth-child(2) {
+
     grid-column: 4 / 7;
+
     grid-row: 1;
 
     width: 74.81%;
+
     justify-self: start;
+
     align-self: start;
+
 }
 
 /* 3. MENTA NEGRA */
 
 .gallery-item:nth-child(3) {
+
     grid-column: 7 / 10;
+
     grid-row: 1;
 
     align-self: start;
+
 }
 
 /* 4. PLATO DE LIMONES */
 
 .gallery-item:nth-child(4) {
+
     grid-column: 4 / 7;
+
     grid-row: 2;
 
     align-self: end;
+
 }
 
 /* 5. PICKPOCKET */
 
 .gallery-item:nth-child(5) {
+
     grid-column: 7 / 10;
+
     grid-row: 2;
 
     width: 74.81%;
+
     justify-self: end;
+
     align-self: end;
+
 }
 
-
 /* ==========================================
+
    FILA INFERIOR - MATERIALES
+
 ========================================== */
 
 /* 6. CUERO */
 
 .gallery-item:nth-child(6) {
+
     grid-column: 1 / 3;
+
     grid-row: 3;
+
 }
 
 /* 7. METAL */
 
 .gallery-item:nth-child(7) {
+
     grid-column: 3 / 5;
+
     grid-row: 3;
+
 }
 
 /* 8. MADERA */
 
 .gallery-item:nth-child(8) {
+
     grid-column: 6 / 8;
+
     grid-row: 3;
+
 }
 
 /* 9. VIDRIO */
 
 .gallery-item:nth-child(9) {
+
     grid-column: 8 / 10;
+
     grid-row: 3;
+
 }
 
 /* Fotografías cuadradas */
 
 .gallery-item:nth-child(n+6) {
+
     aspect-ratio: 1 / 1;
+
 }
 
 .gallery-item:nth-child(n+6) img {
+
     height: 100%;
+
     object-fit: cover;
+
 }
 
-
 /* ==========================================
+
    TARJETAS INDIVIDUALES
+
 ========================================== */
 
 .gallery-item {
+
     position: relative;
+
     overflow: hidden;
 
     width: 100%;
+
     min-width: 0;
 
     border-radius: 0;
+
     cursor: pointer;
+
 }
 
-
 /* ==========================================
+
    IMÁGENES
+
 ========================================== */
 
 .gallery-item img {
+
     display: block;
 
     width: 100%;
+
     height: auto;
 
     object-fit: contain;
 
     transition: transform 0.5s ease;
+
 }
 
 /* Recoleta ocupa toda la altura asignada */
 
 .gallery-item:nth-child(1) img {
+
     width: 100%;
+
     height: 100%;
+
     object-fit: cover;
+
 }
 
-
 /* ==========================================
+
    ENLACES - LIGHTBOX
+
 ========================================== */
 
 .gallery-item>a {
+
     position: relative;
+
     display: block;
 
     width: 100%;
+
     height: 100%;
 
     color: inherit;
+
     text-decoration: none;
+
 }
 
-
 /* ==========================================
+
    OVERLAY - INFORMACIÓN DE PROYECTOS
+
 ========================================== */
 
 .gallery-overlay {
+
     position: absolute;
 
     bottom: 0;
+
     left: 0;
 
-    width: 100%;
-    height: 117px;
+    width: 200%;
 
     background: var(--verde);
     color: white;
@@ -776,202 +1045,356 @@ li,
     box-sizing: border-box;
 
     display: flex;
+
     flex-direction: column;
+
     justify-content: center;
 
     /* Oculto inicialmente */
+
     transform: translateY(100%);
 
     transition: transform 0.3s ease-in-out;
 
     /* Permite hacer clic en el enlace */
+
     pointer-events: none;
+
 }
 
-
 /* ==========================================
+
    TEXTOS DEL OVERLAY
+
 ========================================== */
 
 .gallery-overlay h3 {
+
     margin: 0 0 5px 0;
 
     font-size: 1.1rem;
+
     font-weight: 600;
+
     line-height: 1.3;
 
     color: white;
+
 }
 
 .gallery-overlay p {
+
     margin: 0;
 
     font-size: 0.9rem;
+
     line-height: 1.4;
 
     color: #dddddd;
+
 }
 
-
 /* ==========================================
+
    EFECTOS HOVER
+
 ========================================== */
 
 /* Aparece la información desde abajo */
 
 .gallery-item:hover .gallery-overlay,
+
 .gallery-item:focus-within .gallery-overlay {
+
     transform: translateY(0);
+
 }
 
 /* Ampliación suave de la imagen */
 
 .gallery-item:hover img {
+
     transform: scale(1.05);
+
 }
 
-
 /* ==========================================
+
    RESPONSIVE - TABLET
+
 ========================================== */
 
 @media (max-width: 768px) {
 
     .gallery-container {
+
         grid-template-columns: repeat(2, minmax(0, 1fr));
+
         grid-template-rows: auto;
 
         gap: 20px;
+
         width: 92%;
 
         margin: 50px auto;
+
     }
 
     /* Se reinician las posiciones de escritorio */
 
     .gallery-item:nth-child(n) {
+
         grid-column: auto;
+
         grid-row: auto;
 
         width: 100%;
 
         justify-self: stretch;
+
         align-self: auto;
+
     }
 
     /* Recoleta ocupa dos columnas */
 
     .gallery-item:nth-child(1) {
+
         grid-column: 1 / -1;
 
         justify-self: center;
+
         max-width: 535px;
+
     }
 
     .gallery-item:nth-child(1) img {
+
         height: auto;
+
         object-fit: contain;
+
     }
+
 }
 
-
 /* ==========================================
+
    RESPONSIVE - CELULAR
+
 ========================================== */
 
 @media (max-width: 480px) {
 
     .gallery-container {
+
         grid-template-columns: 1fr;
 
         gap: 20px;
+
         width: 92%;
 
         margin: 40px auto;
+
     }
 
     .gallery-item:nth-child(n) {
+
         grid-column: 1;
+
         grid-row: auto;
+
     }
 
     /* Fotografías de materiales */
 
     .gallery-item:nth-child(n+6) {
+
         max-width: 344px;
+
         justify-self: center;
+
     }
 
     /* Overlay */
 
     .gallery-overlay {
+
         height: 117px;
+
         padding: 15px;
+
     }
 
     .gallery-overlay h3 {
+
         font-size: 1rem;
+
     }
 
     .gallery-overlay p {
+
         font-size: 0.8rem;
+
     }
+
 }
 
 /* VOLVER */
 
 #volver-top {
+
     position: fixed;
+
     bottom: 70px;
+
     right: 70px;
+
     z-index: 999;
+
     opacity: 0;
+
     pointer-events: none;
+
     transition: 0.3s;
+
     width: 60px;
+
     height: 60px;
+
 }
 
 #volver-top.visible {
+
     opacity: 1;
+
     pointer-events: auto;
+
 }
 
 #volver-top #circulito {
+
     fill: var(--amarillazo);
+
 }
 
 #volver-top #flechita {
+
     fill: var(--rosa-pop);
+
 }
 
 #volver-top:hover #circulito {
+
     fill: var(--verde);
+
 }
 
 #volver-top:hover #flechita {
+
     fill: var(--amarillazo);
+
 }
+
+
+/* ==========================================
+   CONTACTO - ESTRUCTURA GENERAL
+========================================== */
+
+.main-contacto {
+    display: flex;
+    width: 100%;
+    max-width: 1920px;
+    height: auto;
+    margin: 0 auto;
+    padding: 157px 40px 289px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0;
+    box-sizing: border-box;
+}
+
+.contacto-layout {
+    display: flex;
+    width: 100%;
+    max-width: 1504px;
+    min-height: 994px;
+    margin: 0 auto;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 264px;
+    box-sizing: border-box;
+}
+
+
+/* ==========================================
+   CONTACTO - TÍTULOS
+========================================== */
+
+.main-contacto .titulos {
+    display: flex;
+    width: auto;
+    flex: 0 0 auto;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.titulos-contacto {
+    display: flex;
+    width: auto;
+    height: auto;
+    padding: 0;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 7px;
+}
+
+.titulos h1 {
+    margin: 0;
+    font-family: "anisete", sans-serif;
+    font-size: 70px;
+    font-weight: 400;
+    line-height: 1;
+    color: var(--azul);
+    white-space: nowrap;
+}
+
+.titulos h2 {
+    margin: 0;
+    font-family: "helvetica", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.3;
+    color: var(--azul);
+    white-space: nowrap;
+}
+
 
 /* ==========================================
    FORMULARIO DE CONTACTO
 ========================================== */
 
-.formulario-contacto {
-    width: calc(100% - 40px);
+.main-contacto .formulario-contacto {
+    display: block;
+    flex: 1 1 879px;
+    width: 100%;
     max-width: 879px;
+    min-width: 0;
     min-height: 994px;
-
-    margin: 90px auto;
-
+    margin: 0;
     padding: 45px 40px 31px;
     box-sizing: border-box;
-
-    background: #F6E1EB;
+    background-color: #F6E1EB;
     border-radius: 8px;
 }
 
-/* CONTENIDO */
+
+/* ==========================================
+   CONTENIDO DEL FORMULARIO
+========================================== */
 
 .formulario-contenido {
     display: flex;
@@ -979,13 +1402,18 @@ li,
     gap: 55px;
 }
 
-/* CAMPOS */
+
+/* ==========================================
+   CAMPOS DEL FORMULARIO
+========================================== */
 
 .campo-formulario {
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
+
+/* Etiquetas y títulos */
 
 .campo-formulario label,
 .grupo-opciones legend {
@@ -994,45 +1422,65 @@ li,
     color: var(--azul);
 }
 
-/* INPUTS */
+
+/* ==========================================
+   INPUTS Y TEXTAREA
+========================================== */
 
 .campo-formulario input,
 .campo-formulario textarea {
     width: 100%;
     box-sizing: border-box;
-
     border: none;
     border-radius: 0;
-
-    background: #FFFFFF;
-    color: var(--rosa-pop);
-
+    background-color: #FFFFFF;
+    color: var(--azul);
     padding: 18px 20px;
-
-    font-family: inherit;
+    font-family: "anisete", sans-serif;
     font-size: 16px;
-
+    font-weight: 400;
     outline: none;
 }
+
+/* Inputs */
 
 .campo-formulario input {
     height: 50px;
 }
+
+/* Textarea */
 
 .campo-formulario textarea {
     height: 180px;
     resize: vertical;
 }
 
-/* PLACEHOLDER */
+/* Borde verde al seleccionar un campo */
+
+.campo-formulario input:focus,
+.campo-formulario textarea:focus {
+    border: 2px solid #24D46D;
+    outline: none;
+}
+
+
+/* ==========================================
+   PLACEHOLDERS
+========================================== */
 
 .campo-formulario input::placeholder,
 .campo-formulario textarea::placeholder {
     color: var(--rosa-pop);
+    font-family: "anisete", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
     opacity: 1;
 }
 
-/* GRUPOS DE OPCIONES */
+
+/* ==========================================
+   GRUPOS DE OPCIONES
+========================================== */
 
 .grupo-opciones {
     border: none;
@@ -1041,12 +1489,17 @@ li,
     min-width: 0;
 }
 
+/* Títulos de los grupos */
+
 .grupo-opciones legend {
     margin-bottom: 20px;
     padding: 0;
 }
 
-/* CHECKLIST */
+
+/* ==========================================
+   CHECKLIST
+========================================== */
 
 .check-list {
     display: flex;
@@ -1056,19 +1509,24 @@ li,
     row-gap: 15px;
 }
 
+/* Etiquetas de las opciones */
+
 .check-list label {
     display: inline-flex;
     align-items: center;
     gap: 10px;
-
     font-size: 20px;
     font-weight: 600;
     color: var(--azul);
-
     cursor: pointer;
 }
 
-/* CHECKBOX ORIGINAL OCULTO */
+
+/* ==========================================
+   CHECKBOX NATIVO
+========================================== */
+
+/* Ocultar checkbox original */
 
 .check-list input[type="checkbox"] {
     position: absolute;
@@ -1077,44 +1535,78 @@ li,
     height: 1px;
 }
 
-/* CHECKBOX PERSONALIZADO */
+
+/* ==========================================
+   CHECKBOX PERSONALIZADO
+========================================== */
+
+/* Estado sin marcar */
 
 .check-personalizado {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 30px;
     height: 30px;
     flex-shrink: 0;
-
+    box-sizing: border-box;
+    background-color: #FFFFFF;
     border: 2px solid var(--rosa-pop);
     border-radius: 4px;
-
-    background: transparent;
-    box-sizing: border-box;
-
-    transition: background 0.2s ease;
+    transition:
+        background-color 0.2s ease,
+        border-color 0.2s ease;
 }
 
-/* ESTADO SELECCIONADO */
+/* Estrella oculta por defecto */
+
+.check-personalizado svg {
+    display: none;
+    width: 23px;
+    height: 22px;
+    flex-shrink: 0;
+}
+
+
+/* ==========================================
+   CHECKBOX SELECCIONADO
+========================================== */
+
+/* Fondo verde */
 
 .check-list input:checked+.check-personalizado {
     background-color: #24D46D;
-
     border-color: #24D46D;
-
-    background-image: url("img/estrella-check.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 30px 30px;
 }
 
-/* ACCESIBILIDAD */
+/* Mostrar estrella blanca */
+
+.check-list input:checked+.check-personalizado svg {
+    display: block;
+}
+
+/* Color de la estrella */
+
+.check-personalizado svg path {
+    fill: #FFFFFF;
+}
+
+
+/* ==========================================
+   ACCESIBILIDAD
+========================================== */
+
+/* Foco al navegar con teclado */
 
 .check-list input:focus-visible+.check-personalizado {
     outline: 2px solid var(--azul);
     outline-offset: 3px;
 }
 
-/* BOTÓN ENVIAR */
+
+/* ==========================================
+   BOTÓN ENVIAR
+========================================== */
 
 .contenedor-enviar {
     display: flex;
@@ -1125,41 +1617,104 @@ li,
     display: flex;
     align-items: center;
     justify-content: center;
-
     width: 114px;
     height: 63px;
-
     padding: 0;
-
-    background: var(--amarillazo);
+    background-color: var(--amarillazo);
     color: var(--verde);
-
     border: 2px solid var(--verde);
     border-radius: 1000px;
-
-    font-family: inherit;
+    font-family: "anisete", sans-serif;
     font-size: 16px;
     font-weight: 600;
-
     cursor: pointer;
     transition: transform 0.2s ease;
 }
+
+/* Hover del botón */
 
 .button-enviar:hover {
     transform: scale(1.05);
 }
 
+
 /* ==========================================
-   RESPONSIVE TABLET
+   RESPONSIVE - PANTALLAS MEDIANAS
+   HASTA 1500 PX
+========================================== */
+
+@media (max-width: 1500px) {
+
+    .contacto-layout {
+        gap: 60px;
+    }
+
+    .titulos-contacto h1 {
+        font-size: 60px;
+    }
+
+    .titulos-contacto h2 {
+        font-size: 20px;
+        white-space: normal;
+    }
+}
+
+
+/* ==========================================
+   RESPONSIVE - TABLET
+   HASTA 1024 PX
+========================================== */
+
+@media (max-width: 1024px) {
+
+    .main-contacto {
+        padding: 80px 30px 120px;
+    }
+
+    .contacto-layout {
+        flex-direction: column;
+        gap: 50px;
+        min-height: auto;
+    }
+
+    .main-contacto .titulos {
+        width: 100%;
+    }
+
+    .main-contacto .formulario-contacto {
+        flex: 0 1 auto;
+        width: 100%;
+        max-width: 879px;
+        min-height: auto;
+    }
+}
+
+
+/* ==========================================
+   RESPONSIVE - TABLET / CELULAR
+   HASTA 768 PX
 ========================================== */
 
 @media (max-width: 768px) {
 
-    .formulario-contacto {
-        width: 92%;
-        min-height: auto;
+    .main-contacto {
+        padding: 50px 20px 90px;
+    }
+
+    .contacto-layout {
+        gap: 40px;
+    }
+
+    .titulos-contacto h1 {
+        font-size: 48px;
+    }
+
+    .titulos-contacto h2 {
+        font-size: 18px;
+    }
+
+    .main-contacto .formulario-contacto {
         padding: 35px 25px;
-        margin: 50px auto;
     }
 
     .formulario-contenido {
@@ -1175,13 +1730,27 @@ li,
     }
 }
 
+
 /* ==========================================
-   RESPONSIVE CELULAR
+   RESPONSIVE - CELULAR
+   HASTA 480 PX
 ========================================== */
 
 @media (max-width: 480px) {
 
-    .formulario-contacto {
+    .main-contacto {
+        padding: 40px 15px 70px;
+    }
+
+    .titulos-contacto h1 {
+        font-size: 40px;
+    }
+
+    .titulos-contacto h2 {
+        font-size: 16px;
+    }
+
+    .main-contacto .formulario-contacto {
         padding: 25px 20px;
     }
 
@@ -1194,12 +1763,98 @@ li,
         font-size: 15px;
     }
 
-    .check-personalizado {
-        width: 25px;
-        height: 25px;
-    }
-
     .campo-formulario textarea {
         height: 150px;
     }
+}
+
+
+/* ==========================================
+
+   ANIMACIÓN MANZANA DEL LOGO
+
+========================================== */
+
+/* CONTENEDOR */
+
+.manzana-animada {
+
+    position: relative;
+
+    width: 65px;
+
+    height: 65px;
+
+    flex-shrink: 0;
+
+}
+
+/* FOTOGRAMAS */
+
+.manzana-animada .fotograma {
+
+    position: absolute;
+
+    top: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: contain;
+
+    opacity: 0;
+
+    animation: animacion-manzana 2s infinite;
+
+}
+
+/* ORDEN DE LAS IMÁGENES */
+
+.manzana-animada .fotograma:nth-child(1) {
+
+    animation-delay: 0s;
+
+}
+
+.manzana-animada .fotograma:nth-child(2) {
+
+    animation-delay: -1.5s;
+
+}
+
+.manzana-animada .fotograma:nth-child(3) {
+
+    animation-delay: -1s;
+
+}
+
+.manzana-animada .fotograma:nth-child(4) {
+
+    animation-delay: -0.5s;
+
+}
+
+/* CAMBIO DE FOTOGRAMAS */
+
+@keyframes animacion-manzana {
+
+    0%,
+
+    24.99% {
+
+        opacity: 1;
+
+    }
+
+    25%,
+
+    100% {
+
+        opacity: 0;
+
+    }
+
 }

@@ -11,14 +11,19 @@
     <link rel="icon" type="image/x-icon" href="img/favicon-32x32.png">
 </head>
 
-<body>
+<body id="top">
 
     <header class="botonera">
         <nav class="barra">
 
             <!-- Logo -->
             <a class="logo" href="index.html">
-                <img class="manzana-1" src="imagenes/manzana-1.png" alt="Manzana" width="65" height="65">
+                <div class="manzana-animada">
+                    <img src="img/manzana-1.png" alt="Manzana" class="fotograma">
+                    <img src="img/manzana-2.png" alt="" class="fotograma">
+                    <img src="img/manzana-3.png" alt="" class="fotograma">
+                    <img src="img/imagen-footer.png" alt="" class="fotograma">
+                </div>
                 <span id="logo">MR</span>
             </a>
 
@@ -43,7 +48,7 @@
 
         <section class="seccion-1">
             <div class="seccion-1-columna">
-                <img src="imagenes/foto-perfil.png" alt="Malena" />
+                <img src="img/foto-perfil.png" alt="Malena" />
             </div>
             <div class="seccion-1-columna">
                 <h3>tenGo la costuMbre de mirar</h3>
@@ -60,14 +65,23 @@
         <section class="seccion-2">
 
             <!-- 1. Áreas de interés -->
+
             <div class="card-acordeon area-de-interes">
-                <button class="pill-toggle" type="button">
+
+                <button class="pill-toggle" type="button" aria-expanded="false">
+
                     <svg class="icono-flecha" xmlns="http://www.w3.org/2000/svg" width="40" height="40"
                         viewBox="0 0 40 40" fill="none">
-                        <circle cx="20" cy="20" r="20" transform="rotate(180 20 20)" fill="#FF3797" />
+
+                        <circle cx="20" cy="20" r="20" fill="#FF3797" />
+
                         <path d="M20 33L8.74167 13.5H31.2583L20 33Z" fill="#FFD527" />
                     </svg>
-                    <span class="pill-titulo">Áreas de interes</span>
+
+                    <span class="pill-titulo">
+                        Áreas dE interés
+                    </span>
+
                 </button>
 
                 <ul class="lista-desplegada">
@@ -76,7 +90,9 @@
                     <li>Packaging</li>
                     <li>Producción gráfica</li>
                 </ul>
+
             </div>
+
 
             <!-- 2. Competencias -->
             <div class="card-acordeon competencias">
@@ -86,7 +102,7 @@
                         <circle cx="20" cy="20" r="20" transform="rotate(180 20 20)" fill="#FF3797" />
                         <path d="M20 33L8.74167 13.5H31.2583L20 33Z" fill="#FFD527" />
                     </svg>
-                    <span class="pill-titulo">competencias</span>
+                    <span class="pill-titulo">comPetenciaS</span>
                 </button>
 
                 <ul class="lista-desplegada">
@@ -108,7 +124,7 @@
                         <circle cx="20" cy="20" r="20" transform="rotate(180 20 20)" fill="#FF3797" />
                         <path d="M20 33L8.74167 13.5H31.2583L20 33Z" fill="#FFD527" />
                     </svg>
-                    <span class="pill-titulo">Herramientas</span>
+                    <span class="pill-titulo">HerramieNtas</span>
                 </button>
 
                 <ul class="grilla-herramientas">
@@ -120,68 +136,70 @@
                     <li><img src="img/officeng.png" alt="Office" width="40" height="40"></li>
                 </ul>
             </div>
-
-        </section>
-        <!-- 4. Idiomas -->
-        <div class="card-acordeon idiomas">
-            <button class="pill-toggle" type="button">
-                <svg class="icono-flecha" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40"
-                    fill="none">
-                    <circle cx="20" cy="20" r="20" transform="rotate(180 20 20)" fill="#FF3797" />
-                    <path d="M20 33L8.74167 13.5H31.2583L20 33Z" fill="#FFD527" />
-                </svg>
-                <span class="pill-titulo">Idiomas</span>
-            </button>
-
-            <ul class="lista-desplegada listado-idiomas">
-                <li>Inglés · B2</li>
-                <li>Alemán · A2</li>
-                <li>Portugués · A1</li>
-                <li>Lengua de Señas Argentina
-                    (LSA) · A1</li>
-            </ul>
-        </div>
-
         </section>
     </main>
 
+
+    <!-- =======================================================
+    8. FOOTER
+======================================================= -->
+
     <footer class="footer">
-        <!-- 1. Bloque Cátedra -->
+
+        <!-- 8.1. BLOQUE IZQUIERDO: CÁTEDRA -->
         <div class="catedra">
             <p>Computación III</p>
             <p>Cátedra Wischñevsky 2026</p>
         </div>
 
-        <!-- 2. Bloque Central: Manzana -->
+        <!-- 8.2. BLOQUE CENTRAL: MANZANA -->
         <div class="imagen-footer">
             <img class="manzana-footer" src="img/imagen-footer.png" alt="manzana mordida" width="65" height="65">
             <p class="texto-manzana">ñam ñam ñam</p>
         </div>
 
-        <!-- 3. Bloque Derecho: Redes + Correo -->
+        <!-- 8.3. BLOQUE DERECHO: REDES + CORREO -->
         <div class="contacto-redes">
+            <!-- REDES SOCIALES -->
             <ul class="redes">
+                <!-- BEHANCE -->
                 <li>
                     <a href="#" target="_blank" rel="noopener noreferrer">
+                        <!-- Imagen original -->
                         <img class="icono-red" src="img/behance.png" alt="Behance" width="40" height="40">
+                        <!-- Imagen alternativa: hover -->
+                        <img class="icono-red icono-hover" src="img/behance-hover.png" alt="" width="40" height="40">
                     </a>
                 </li>
+
+                <!-- INSTAGRAM -->
                 <li>
-                    <a href="https://www.instagram.com/maleable.r?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw=="
-                        target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.instagram.com/maleable.r" target="_blank" rel="noopener noreferrer">
+                        <!-- Imagen original -->
                         <img class="icono-red" src="img/instagram.png" alt="Instagram" width="40" height="40">
+                        <!-- Imagen alternativa: hover -->
+                        <img class="icono-red icono-hover" src="img/instagram-hover.png" alt="" width="40" height="40">
                     </a>
                 </li>
+
+                <!-- LINKEDIN -->
                 <li>
                     <a href="#" target="_blank" rel="noopener noreferrer">
+                        <!-- Imagen original -->
                         <img class="icono-red" src="img/linkedin.png" alt="LinkedIn" width="35" height="35">
+                        <!-- Imagen alternativa: hover -->
+                        <img class="icono-red icono-hover" src="img/linkedin-hover.png" alt="" width="35" height="35">
                     </a>
                 </li>
             </ul>
-
+            <!-- CORREO ELECTRÓNICO -->
             <p class="email-footer">malErifai@gmail.com</p>
         </div>
+
     </footer>
+
+    <script src="lightbox/jquery.min.js"></script>
+    <script src="lightbox/jquery.fancybox.js"></script>
     <a href="#top" id="volver-top">
         <svg viewBox="0 0 350.81 350.81">
             <circle id="circulito" cx="175.4" cy="175.4" r="175.4" />
@@ -190,16 +208,44 @@
         </svg>
     </a>
     <script>
+
         const boton = document.getElementById("volver-top");
-        window.addEventListener("scroll", function () {
-            if (window.scrollY > 1080) {
+
+        function mostrarBotonTop() {
+            const scrollMaximo =
+                document.documentElement.scrollHeight - window.innerHeight;
+
+            if (scrollMaximo > 0 && window.scrollY >= scrollMaximo * 0.5) {
                 boton.classList.add("visible");
-            }
-            else {
+            } else {
                 boton.classList.remove("visible");
             }
+        }
+
+        window.addEventListener("scroll", mostrarBotonTop);
+        window.addEventListener("resize", mostrarBotonTop);
+
+        mostrarBotonTop();
+
+    </script>
+
+
+    <script>
+        document.querySelectorAll(".card-acordeon").forEach((card) => {
+
+            const boton = card.querySelector(".pill-toggle");
+
+            boton.addEventListener("click", () => {
+
+                const abierto = card.classList.toggle("abierto");
+
+                boton.setAttribute("aria-expanded", abierto);
+
+            });
+
         });
     </script>
+
 </body>
 
 </html>

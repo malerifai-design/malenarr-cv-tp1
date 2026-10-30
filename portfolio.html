@@ -19,14 +19,19 @@
 </head>
 
 
-<body>
+<body id="top">
 
     <header class="botonera">
         <nav class="barra">
 
             <!-- Logo -->
             <a class="logo" href="index.html">
-                <img class="manzana-1" src="imagenes/manzana-1.png" alt="Manzana" width="65" height="65">
+                <div class="manzana-animada">
+                    <img src="img/manzana-1.png" alt="Manzana" class="fotograma">
+                    <img src="img/manzana-2.png" alt="" class="fotograma">
+                    <img src="img/manzana-3.png" alt="" class="fotograma">
+                    <img src="img/imagen-footer.png" alt="" class="fotograma">
+                </div>
                 <span id="logo">MR</span>
             </a>
 
@@ -47,144 +52,168 @@
                 <h2>Creo que así se deberia ver un portfolio</h2>
             </div>
         </section>
-        <div class="gallery-container">
-            <!-- Foto 1 -->
-            <div class="gallery-item">
-                <a href="imagenes/cementerio-recoleta.png" data-fancybox="gallery"
-                    data-caption="Conozca Recoleta - Computación III">
-                    <img src="imagenes/cementerio-recoleta.png" alt="cementerio-recoleta">
-                    <div class="gallery-overlay">
-                        <h3>Página web «Conozca Recoleta»</h3>
-                        <p>Computación III - TP grupal - 2026</p>
-                    </div>
-                </a>
-            </div>
-            <!-- Foto 2 -->
-            <div class="gallery-item">
-                <a href="imagenes/teatro-de-guerra-overlay.png" data-fancybox="gallery"
-                    data-caption="Afiche «Teatro de guerra» - TD II">
-                    <img src="imagenes/teatro-de-guerra.png" alt="teatro-de-guerra">
-                    <div class="gallery-overlay">
-                        <h3>Afiche «Teatro de guerra»</h3>
-                        <p>Taller de diseño II - 2024</p>
-                    </div>
-                </a>
-            </div>
-            <!-- Foto 3 -->
-            <div class="gallery-item">
-                <a href="imagenes/menta-negra.png" data-fancybox="gallery"
-                    data-caption="Menú para «Menta Negra» - ET II">
-                    <img src="imagenes/menta-negra.png" alt="menta-negra">
-                    <div class="gallery-overlay">
-                        <h3>Menú para «Menta Negra»</h3>
-                        <p>Espacio tipográfico II - 2025</p>
-                    </div>
-                </a>
-            </div>
-            <!-- Foto 4 -->
-            <div class="gallery-item">
-                <a href="imagenes/plato-limones-overlay.png" data-fancybox="gallery"
-                    data-caption="Vajilla amalfitana - Cerámica">
-                    <img src="imagenes/plato-limones.png" alt="plato-limones">
-                    <div class="gallery-overlay">
-                        <h3>Vajilla amalfitana</h3>
-                        <p>Cerámica - 2026</p>
-                    </div>
-                </a>
-            </div>
-            <!-- Foto 5 -->
-            <div class="gallery-item">
-                <a href="imagenes/pickpocket-overlay.png" data-fancybox="gallery"
-                    data-caption="Pickpocket - Fotografía">
-                    <img src="imagenes/pickpocket.png" alt="pickpocket">
-                    <div class="gallery-overlay">
-                        <h3>Pickpocket</h3>
-                        <p>Fotografía - 2024</p>
-                    </div>
-                </a>
-            </div>
-            <!-- Foto 6 -->
-            <div class="gallery-item">
-                <a href="imagenes/cuero.png" data-fancybox="gallery" data-caption="Cuero - FyPV">
-                    <img src="imagenes/cuero.png" alt="metal">
-                    <div class="gallery-overlay">
-                        <h3>Cuero</h3>
-                        <p>Fotografía y percepción visual- 2025</p>
-                    </div>
-                </a>
-            </div>
-            <!-- Foto 7 -->
-            <div class="gallery-item">
-                <a href="imagenes/metal.png" data-fancybox="gallery" data-caption="Metal - FyPV">
-                    <img src="imagenes/metal.png" alt="metal">
-                    <div class="gallery-overlay">
-                        <h3>Metal</h3>
-                        <p>Fotografía y percepción visual- 2025</p>
-                    </div>
-                </a>
-            </div>
-            <!-- Foto 8 -->
-            <div class="gallery-item">
-                <a href="imagenes/madera.png" data-fancybox="gallery" data-caption="Madera - FyPV">
-                    <img src="imagenes/madera.png" alt="madera">
-                    <div class="gallery-overlay">
-                        <h3>Madera</h3>
-                        <p>Fotografía y percepción visual- 2025</p>
-                    </div>
-                </a>
-            </div>
-            <!-- Foto 9 -->
-            <div class="gallery-item">
-                <a href="imagenes/vidrio.png" data-fancybox="gallery" data-caption="Vidrio - FyPV">
-                    <img src="imagenes/vidrio.png" alt="vidrio">
-                    <div class="gallery-overlay">
-                        <h3>Vidrio</h3>
-                        <p>Fotografía y percepción visual- 2025</p>
-                    </div>
-                </a>
-            </div>
 
-        </div><!-- Cierra gallery-container -->
+        <!-- 2. GALERÍA DE PROYECTOS -->
+        <section class="galeria" aria-label="Galería de proyectos">
+            <div class="gallery-container">
+                <!-- Foto 1 -->
+                <div class="gallery-item">
+                    <a href="img/cementerio-recoleta.png" data-fancybox="gallery"
+                        data-caption="Conozca Recoleta - Computación III">
+                        <img src="img/cementerio-recoleta.png" alt="cementerio-recoleta">
+                        <div class="gallery-overlay">
+                            <h3>Página web «Conozca Recoleta»</h3>
+                            <p>Computación III - TP grupal - 2026</p>
+                        </div>
+                    </a>
+                </div>
+                <!-- Foto 2 -->
+                <div class="gallery-item">
+                    <a href="img/teatro-de-guerra-overlay.png" data-fancybox="gallery"
+                        data-caption="Afiche «Teatro de guerra» - TD II">
+                        <img src="img/teatro-de-guerra.png" alt="teatro-de-guerra">
+                        <div class="gallery-overlay">
+                            <h3>Afiche «Teatro de guerra»</h3>
+                            <p>Taller de diseño II - 2024</p>
+                        </div>
+                    </a>
+                </div>
+                <!-- Foto 3 -->
+                <div class="gallery-item">
+                    <a href="img/menta-negra.png" data-fancybox="gallery"
+                        data-caption="Menú para «Menta Negra» - ET II">
+                        <img src="img/menta-negra.png" alt="menta-negra">
+                        <div class="gallery-overlay">
+                            <h3>Menú para «Menta Negra»</h3>
+                            <p>Espacio tipográfico II - 2025</p>
+                        </div>
+                    </a>
+                </div>
+                <!-- Foto 4 -->
+                <div class="gallery-item">
+                    <a href="img/plato-limones-overlay.png" data-fancybox="gallery"
+                        data-caption="Vajilla amalfitana - Cerámica">
+                        <img src="img/plato-limones.png" alt="plato-limones">
+                        <div class="gallery-overlay">
+                            <h3>Vajilla amalfitana</h3>
+                            <p>Cerámica - 2026</p>
+                        </div>
+                    </a>
+                </div>
+                <!-- Foto 5 -->
+                <div class="gallery-item">
+                    <a href="img/pickpocket-overlay.png" data-fancybox="gallery" data-caption="Pickpocket - Fotografía">
+                        <img src="img/pickpocket.png" alt="pickpocket">
+                        <div class="gallery-overlay">
+                            <h3>Pickpocket</h3>
+                            <p>Fotografía - 2024</p>
+                        </div>
+                    </a>
+                </div>
+                <!-- Foto 6 -->
+                <div class="gallery-item">
+                    <a href="img/cuero.png" data-fancybox="gallery" data-caption="Cuero - FyPV">
+                        <img src="img/cuero.png" alt="metal">
+                        <div class="gallery-overlay">
+                            <h3>Cuero</h3>
+                            <p>Fotografía y percepción visual- 2025</p>
+                        </div>
+                    </a>
+                </div>
+                <!-- Foto 7 -->
+                <div class="gallery-item">
+                    <a href="img/metal.png" data-fancybox="gallery" data-caption="Metal - FyPV">
+                        <img src="img/metal.png" alt="metal">
+                        <div class="gallery-overlay">
+                            <h3>Metal</h3>
+                            <p>Fotografía y percepción visual- 2025</p>
+                        </div>
+                    </a>
+                </div>
+                <!-- Foto 8 -->
+                <div class="gallery-item">
+                    <a href="img/madera.png" data-fancybox="gallery" data-caption="Madera - FyPV">
+                        <img src="img/madera.png" alt="madera">
+                        <div class="gallery-overlay">
+                            <h3>Madera</h3>
+                            <p>Fotografía y percepción visual- 2025</p>
+                        </div>
+                    </a>
+                </div>
+                <!-- Foto 9 -->
+                <div class="gallery-item">
+                    <a href="img/vidrio.png" data-fancybox="gallery" data-caption="Vidrio - FyPV">
+                        <img src="img/vidrio.png" alt="vidrio">
+                        <div class="gallery-overlay">
+                            <h3>Vidrio</h3>
+                            <p>Fotografía y percepción visual- 2025</p>
+                        </div>
+                    </a>
+                </div>
+
+            </div><!-- Cierra gallery-container -->
 
     </main>
 
+
+    <!-- =======================================================
+    8. FOOTER
+======================================================= -->
+
     <footer class="footer">
-        <!-- 1. Bloque Cátedra -->
+
+        <!-- 8.1. BLOQUE IZQUIERDO: CÁTEDRA -->
         <div class="catedra">
             <p>Computación III</p>
             <p>Cátedra Wischñevsky 2026</p>
         </div>
 
-        <!-- 2. Bloque Central: Manzana -->
+        <!-- 8.2. BLOQUE CENTRAL: MANZANA -->
         <div class="imagen-footer">
             <img class="manzana-footer" src="img/imagen-footer.png" alt="manzana mordida" width="65" height="65">
             <p class="texto-manzana">ñam ñam ñam</p>
         </div>
 
-        <!-- 3. Bloque Derecho: Redes + Correo -->
+        <!-- 8.3. BLOQUE DERECHO: REDES + CORREO -->
         <div class="contacto-redes">
+            <!-- REDES SOCIALES -->
             <ul class="redes">
+                <!-- BEHANCE -->
                 <li>
                     <a href="#" target="_blank" rel="noopener noreferrer">
+                        <!-- Imagen original -->
                         <img class="icono-red" src="img/behance.png" alt="Behance" width="40" height="40">
+                        <!-- Imagen alternativa: hover -->
+                        <img class="icono-red icono-hover" src="img/behance-hover.png" alt="" width="40" height="40">
                     </a>
                 </li>
+
+                <!-- INSTAGRAM -->
                 <li>
-                    <a href="https://www.instagram.com/maleable.r?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw=="
-                        target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.instagram.com/maleable.r" target="_blank" rel="noopener noreferrer">
+                        <!-- Imagen original -->
                         <img class="icono-red" src="img/instagram.png" alt="Instagram" width="40" height="40">
+                        <!-- Imagen alternativa: hover -->
+                        <img class="icono-red icono-hover" src="img/instagram-hover.png" alt="" width="40" height="40">
                     </a>
                 </li>
+
+                <!-- LINKEDIN -->
                 <li>
                     <a href="#" target="_blank" rel="noopener noreferrer">
+                        <!-- Imagen original -->
                         <img class="icono-red" src="img/linkedin.png" alt="LinkedIn" width="35" height="35">
+                        <!-- Imagen alternativa: hover -->
+                        <img class="icono-red icono-hover" src="img/linkedin-hover.png" alt="" width="35" height="35">
                     </a>
                 </li>
             </ul>
-
+            <!-- CORREO ELECTRÓNICO -->
             <p class="email-footer">malErifai@gmail.com</p>
         </div>
+
     </footer>
+
     <script src="lightbox/jquery.min.js"></script>
     <script src="lightbox/jquery.fancybox.js"></script>
     <a href="#top" id="volver-top">
@@ -223,7 +252,20 @@
 
         });
     </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const paginaActual = window.location.pathname.split("/").pop();
+            const botones = document.querySelectorAll(".menu .boton");
 
+            botones.forEach(function (boton) {
+                const destino = boton.getAttribute("href");
+
+                if (destino === paginaActual) {
+                    boton.classList.add("activo");
+                }
+            });
+        });
+    </script>
 </body>
 
 

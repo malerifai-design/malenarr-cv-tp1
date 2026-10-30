@@ -18,7 +18,13 @@
 
             <!-- Logo -->
             <a class="logo" href="index.html">
-                <img class="manzana-1" src="imagenes/manzana-1.png" alt="Manzana" width="65" height="65">
+
+                <div class="manzana-animada">
+                    <img src="img/manzana-1.png" alt="Manzana" class="fotograma">
+                    <img src="img/manzana-2.png" alt="" class="fotograma">
+                    <img src="img/manzana-3.png" alt="" class="fotograma">
+                    <img src="img/imagen-footer.png" alt="" class="fotograma">
+                </div>
                 <span id="logo">MR</span>
             </a>
 
@@ -33,110 +39,276 @@
     </header>
 
 
-    <main>
+    <main class="main-contacto">
+        <div class="contacto-layout">
 
-        <!-- TÍTULOS -->
-        <section class="titulos">
-            <div class="malena-rifai">
-                <h1>Llame ya</h1>
-                <h2>En realidad, tipea y cliquea</h2>
-            </div>
-        </section>
-
-        <!-- FORMULARIO -->
-        <form class="formulario-contacto" method="post">
-
-            <div class="formulario-contenido">
-
-                <!-- NOMBRE -->
-                <div class="campo-formulario">
-                    <label for="nombre">Apellido, nombre</label>
-                    <input type="text" name="nombre" id="nombre" maxlength="60" placeholder="Perez, Fulano" required>
+            <!-- TÍTULOS -->
+            <section class="titulos">
+                <div class="titulos-contacto">
+                    <h1>Llame ya</h1>
+                    <h2>En realidad, tipea y cliquea</h2>
                 </div>
+            </section>
 
-                <!-- TEAM -->
-                <fieldset class="grupo-opciones">
-                    <legend>¿Qué team sos?</legend>
+            <!-- FORMULARIO -->
+            <form class="formulario-contacto" method="post">
 
-                    <div class="check-list">
-                        <label>
-                            team GATOS
-                            <input type="checkbox" name="team" value="GATOS">
-                            <span class="check-personalizado"></span>
-                        </label>
+                <div class="formulario-contenido">
 
-                        <label>
-                            team PERROS
-                            <input type="checkbox" name="team" value="PERROS">
-                            <span class="check-personalizado"></span>
-                        </label>
-
-                        <label>
-                            soy tibio/a
-                            <input type="checkbox" name="team" value="tibio">
-                            <span class="check-personalizado"></span>
-                        </label>
+                    <!-- NOMBRE -->
+                    <div class="campo-formulario">
+                        <label for="nombre">Apellido, nombre</label>
+                        <input type="text" name="nombre" id="nombre" maxlength="60" placeholder="Perez, Fulano"
+                            required>
                     </div>
-                </fieldset>
 
-                <!-- EMAIL -->
-                <div class="campo-formulario">
-                    <label for="email">Email</label>
-                    <input type="email" name="email" id="email" placeholder="martaminujin@tuserviciodeemail.com"
-                        required>
-                </div>
+                    <!-- TEAM -->
+                    <fieldset class="grupo-opciones">
+                        <legend>¿Qué team sos?</legend>
 
-                <!-- PROYECTOS -->
-                <fieldset class="grupo-opciones">
-                    <legend>Quiero que hagamos un proyecto:</legend>
+                        <div class="check-list">
+                            <label>
+                                team GATOS
+                                <input type="checkbox" name="team" value="GATOS">
+                                <span class="check-personalizado">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="22" viewBox="0 0 23 22"
+                                        fill="none">
+                                        <path
+                                            d="M11.4126 0L14.1068 8.2918H22.8253L15.7719 13.4164L18.466 21.7082L11.4126 16.5836L4.35917 21.7082L7.05334 13.4164L0 8.2918H8.71843L11.4126 0Z"
+                                            fill="#FFFFFF" />
+                                    </svg>
+                                </span>
+                            </label>
 
-                    <div class="check-list">
-                        <label>
-                            Editorial
-                            <input type="checkbox" name="servicio" value="Editorial">
-                            <span class="check-personalizado"></span>
-                        </label>
+                            <label>
+                                team PERROS
+                                <input type="checkbox" name="team" value="PERROS">
+                                <span class="check-personalizado">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="22" viewBox="0 0 23 22"
+                                        fill="none">
+                                        <path
+                                            d="M11.4126 0L14.1068 8.2918H22.8253L15.7719 13.4164L18.466 21.7082L11.4126 16.5836L4.35917 21.7082L7.05334 13.4164L0 8.2918H8.71843L11.4126 0Z"
+                                            fill="#FFFFFF" />
+                                    </svg>
+                                </span>
+                            </label>
 
-                        <label>
-                            Afiches
-                            <input type="checkbox" name="servicio" value="Afiches">
-                            <span class="check-personalizado"></span>
-                        </label>
+                            <label>
+                                soy tibio/a
+                                <input type="checkbox" name="team" value="tibio">
+                                <span class="check-personalizado">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="22" viewBox="0 0 23 22"
+                                        fill="none">
+                                        <path
+                                            d="M11.4126 0L14.1068 8.2918H22.8253L15.7719 13.4164L18.466 21.7082L11.4126 16.5836L4.35917 21.7082L7.05334 13.4164L0 8.2918H8.71843L11.4126 0Z"
+                                            fill="#FFFFFF" />
+                                    </svg>
+                                </span>
+                            </label>
+                        </div>
+                    </fieldset>
 
-                        <label>
-                            Fotografía
-                            <input type="checkbox" name="servicio" value="Fotografía">
-                            <span class="check-personalizado"></span>
-                        </label>
-
-                        <label>
-                            Cerámica
-                            <input type="checkbox" name="servicio" value="Cerámica">
-                            <span class="check-personalizado"></span>
-                        </label>
-
-                        <label>
-                            Identidad
-                            <input type="checkbox" name="servicio" value="Identidad">
-                            <span class="check-personalizado"></span>
-                        </label>
+                    <!-- EMAIL -->
+                    <div class="campo-formulario">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="martaminujin@tu servicio de email.com"
+                            required>
                     </div>
-                </fieldset>
 
-                <!-- MENSAJE -->
-                <div class="campo-formulario">
-                    <label for="mensaje">Contame en qué pensaste</label>
-                    <textarea name="mensaje" id="mensaje" placeholder="Hola Wanda, me muuueroo..." required></textarea>
+                    <!-- PROYECTOS -->
+                    <fieldset class="grupo-opciones">
+                        <legend>Quiero que hagamos un proyecto:</legend>
+
+                        <div class="check-list">
+                            <label class="check-opcion">
+                                Editorial
+
+                                <input type="checkbox" name="servicio" value="Editorial">
+
+                                <span class="check-personalizado">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="22" viewBox="0 0 23 22"
+                                        fill="none">
+                                        <path
+                                            d="M11.4126 0L14.1068 8.2918H22.8253L15.7719 13.4164L18.466 21.7082L11.4126 16.5836L4.35917 21.7082L7.05334 13.4164L0 8.2918H8.71843L11.4126 0Z"
+                                            fill="#FFFFFF" />
+                                    </svg>
+                                </span>
+                            </label>
+
+                            <label>
+                                Afiches
+                                <input type="checkbox" name="servicio" value="Afiches">
+                                <span class="check-personalizado">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="22" viewBox="0 0 23 22"
+                                        fill="none">
+                                        <path
+                                            d="M11.4126 0L14.1068 8.2918H22.8253L15.7719 13.4164L18.466 21.7082L11.4126 16.5836L4.35917 21.7082L7.05334 13.4164L0 8.2918H8.71843L11.4126 0Z"
+                                            fill="#FFFFFF" />
+                                    </svg>
+                                </span>
+                            </label>
+
+                            <label>
+                                Fotografía
+                                <input type="checkbox" name="servicio" value="Fotografía">
+                                <span class="check-personalizado">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="22" viewBox="0 0 23 22"
+                                        fill="none">
+                                        <path
+                                            d="M11.4126 0L14.1068 8.2918H22.8253L15.7719 13.4164L18.466 21.7082L11.4126 16.5836L4.35917 21.7082L7.05334 13.4164L0 8.2918H8.71843L11.4126 0Z"
+                                            fill="#FFFFFF" />
+                                    </svg>
+                                </span>
+                            </label>
+
+                            <label>
+                                Cerámica
+                                <input type="checkbox" name="servicio" value="Cerámica">
+                                <span class="check-personalizado">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="22" viewBox="0 0 23 22"
+                                        fill="none">
+                                        <path
+                                            d="M11.4126 0L14.1068 8.2918H22.8253L15.7719 13.4164L18.466 21.7082L11.4126 16.5836L4.35917 21.7082L7.05334 13.4164L0 8.2918H8.71843L11.4126 0Z"
+                                            fill="#FFFFFF" />
+                                    </svg>
+                                </span>
+                            </label>
+
+                            <label>
+                                Identidad
+                                <input type="checkbox" name="servicio" value="Identidad">
+                                <span class="check-personalizado">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="22" viewBox="0 0 23 22"
+                                        fill="none">
+                                        <path
+                                            d="M11.4126 0L14.1068 8.2918H22.8253L15.7719 13.4164L18.466 21.7082L11.4126 16.5836L4.35917 21.7082L7.05334 13.4164L0 8.2918H8.71843L11.4126 0Z"
+                                            fill="#FFFFFF" />
+                                    </svg>
+                                </span>
+                            </label>
+                        </div>
+                    </fieldset>
+
+                    <!-- MENSAJE -->
+                    <div class="campo-formulario">
+                        <label for="mensaje">Contame en qué pensaste</label>
+                        <textarea name="mensaje" id="mensaje" placeholder="Hola wanDAA, me muUueroo..."
+                            required></textarea>
+                    </div>
+
+                    <!-- BOTÓN -->
+                    <div class="contenedor-enviar">
+                        <button type="submit" class="button-enviar">
+                            enviaR
+                        </button>
+                    </div>
+
                 </div>
+            </form>
 
-                <!-- BOTÓN -->
-                <div class="contenedor-enviar">
-                    <button type="submit" class="button-enviar">
-                        Enviar
-                    </button>
-                </div>
-
-            </div>
-        </form>
-
+        </div>
     </main>
+
+    <!-- =======================================================
+    8. FOOTER
+======================================================= -->
+
+    <footer class="footer">
+
+        <!-- 8.1. BLOQUE IZQUIERDO: CÁTEDRA -->
+        <div class="catedra">
+            <p>Computación III</p>
+            <p>Cátedra Wischñevsky 2026</p>
+        </div>
+
+        <!-- 8.2. BLOQUE CENTRAL: MANZANA -->
+        <div class="imagen-footer">
+            <img class="manzana-footer" src="img/imagen-footer.png" alt="manzana mordida" width="65" height="65">
+            <p class="texto-manzana">ñam ñam ñam</p>
+        </div>
+
+        <!-- 8.3. BLOQUE DERECHO: REDES + CORREO -->
+        <div class="contacto-redes">
+            <!-- REDES SOCIALES -->
+            <ul class="redes">
+                <!-- BEHANCE -->
+                <li>
+                    <a href="#" target="_blank" rel="noopener noreferrer">
+                        <!-- Imagen original -->
+                        <img class="icono-red" src="img/behance.png" alt="Behance" width="40" height="40">
+                        <!-- Imagen alternativa: hover -->
+                        <img class="icono-red icono-hover" src="img/behance-hover.png" alt="" width="40" height="40">
+                    </a>
+                </li>
+
+                <!-- INSTAGRAM -->
+                <li>
+                    <a href="https://www.instagram.com/maleable.r" target="_blank" rel="noopener noreferrer">
+                        <!-- Imagen original -->
+                        <img class="icono-red" src="img/instagram.png" alt="Instagram" width="40" height="40">
+                        <!-- Imagen alternativa: hover -->
+                        <img class="icono-red icono-hover" src="img/instagram-hover.png" alt="" width="40" height="40">
+                    </a>
+                </li>
+
+                <!-- LINKEDIN -->
+                <li>
+                    <a href="#" target="_blank" rel="noopener noreferrer">
+                        <!-- Imagen original -->
+                        <img class="icono-red" src="img/linkedin.png" alt="LinkedIn" width="35" height="35">
+                        <!-- Imagen alternativa: hover -->
+                        <img class="icono-red icono-hover" src="img/linkedin-hover.png" alt="" width="35" height="35">
+                    </a>
+                </li>
+            </ul>
+            <!-- CORREO ELECTRÓNICO -->
+            <p class="email-footer">malErifai@gmail.com</p>
+        </div>
+
+    </footer>
+
+    <a href="#top" id="volver-top">
+        <svg viewBox="0 0 350.81 350.81">
+            <circle id="circulito" cx="175.4" cy="175.4" r="175.4" />
+            <path id="flechita"
+                d="M189.74,56.27l69.85,69.84c7.85,7.85,7.85,20.59,0,28.44-7.85,7.85-20.59,7.85-28.43,0l-36.88-36.88v163.63c0,10.53-8.61,19.14-19.14,19.14h0c-10.53,0-19.14-8.61-19.14-19.14V118.46s-36.35,36.34-36.35,36.34c-7.85,7.85-20.58,7.85-28.43,0-3.92-3.92-5.89-9.07-5.89-14.22,0-5.14,1.97-10.29,5.89-14.22l70.1-70.1c7.85-7.85,20.58-7.85,28.43,0h0Z" />
+        </svg>
+    </a>
+    <script>
+
+        const boton = document.getElementById("volver-top");
+
+        function mostrarBotonTop() {
+            const scrollMaximo =
+                document.documentElement.scrollHeight - window.innerHeight;
+
+            if (scrollMaximo > 0 && window.scrollY >= scrollMaximo * 0.5) {
+                boton.classList.add("visible");
+            } else {
+                boton.classList.remove("visible");
+            }
+        }
+
+        window.addEventListener("scroll", mostrarBotonTop);
+        window.addEventListener("resize", mostrarBotonTop);
+
+        mostrarBotonTop();
+
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const paginaActual = window.location.pathname.split("/").pop();
+            const botones = document.querySelectorAll(".menu .boton");
+
+            botones.forEach(function (boton) {
+                const destino = boton.getAttribute("href");
+
+                if (destino === paginaActual) {
+                    boton.classList.add("activo");
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
